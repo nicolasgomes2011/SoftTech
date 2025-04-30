@@ -2,8 +2,8 @@
 <div class="card h-100 shadow-sm border-0">
     <div class="position-relative">
         <!-- Display the package image -->
-        <img src="http://localhost:8002/uploads/{{ $pacote->imagem }}" 
-             onError='this.src="http://localhost:8002/uploads/pacote_nao_disponivel.png"' 
+        <img src="http://localhost:8001/uploads/{{ $pacote->imagem }}" 
+             onError='this.src="http://localhost:8001/uploads/pacote_nao_disponivel.png"' 
              class="card-img-top rounded-top img-fluid pacote-img" 
              alt="{{ $pacote->nome }}">
         <div class="badge bg-primary position-absolute top-0 start-0 m-2 px-3 py-2">

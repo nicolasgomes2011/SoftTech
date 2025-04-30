@@ -45,6 +45,17 @@ class FiltroPacotes extends Component
         $this->pacotes = $query->get();
     }
 
+    public function limparFiltro()
+    {
+        // Reset all filter properties to their default values
+        $this->destino = '';
+        $this->dataPartida = '';
+        $this->precoMaximo = '';
+
+        // Reload all packages
+        $this->pacotes = Pacote::all();
+    }
+
     // The render method is responsible for rendering the component's view
     public function render()
     {
