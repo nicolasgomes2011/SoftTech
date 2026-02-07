@@ -23,7 +23,10 @@
                     <a class="nav-link text-dark" href="servicos">Fornecedores</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="contato">Contato</a>
+                    <a class="nav-link text-dark" href="{{ route('contato.index') }}">Contato</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="{{ route('login.index') }}">Area <br> Administrativa</a>
                 </li>
             </ul>
         </div>
